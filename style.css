@@ -1,3 +1,57 @@
+body {
+    background-color: white;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    gap: 1px;
+    background-color: black;
+    padding: 10;
+}
+
+.grid-container > div {
+    background-color: white;
+    font-size: 1.125em;
+}
+
+/* grid-area: grid-row-start / grid-column-start / span rows / span columns */
+
+.item1 {
+    grid-area:  1 / 1 / span 1 / span 3; 
+}
+.item2 {
+    grid-area: 1 / 4 / span 1 / span 1; 
+}
+.item3 {
+    grid-area: 2 / 1 / span 3 / span 3; 
+}
+.item4 {
+    grid-area: 2 / 4 / span 2 / span 1; 
+}
+.item5 {
+    grid-area: 4 / 4 / span 1 / span 1; 
+}
+
 h1 {
-    color:crimson; 
+    color: black; 
+    font-family: "Rockwell", "Courier New", Courier, monospace; 
+    font-size: 2.25em;
+}
+
+nav {
+    width: 3.5in; 
+    color: black; 
+    font-family: "Helvetica", sans-serif; 
+    font-size: 1.125em;
+}
+
+li {
+    display: inline;
+}
+
+p {
+    color: black; 
+    font-family: "Helvetica", sans-serif; 
+    font-size: 0.9375em;
 }
