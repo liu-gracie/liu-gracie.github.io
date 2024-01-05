@@ -3,48 +3,60 @@
     padding: 0; 
 }
 
+a:link {
+    color: black; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: black; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightslategray; 
+    text-decoration: none;
+} 
+
 .wrapper {
     background-color: white;
-    width: 100%; 
+    width: 320px; 
+    margin: 0 auto; 
 }
 
 .home {
     width: 50%; 
-    padding-top: 1.25em; 
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 2em; 
 }
 
-nav {
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+.navbar ul{
+    list-style-type: none; 
+    overflow: hidden;
+    padding-bottom: 1.5em;
     color: black; 
     font-family: Arial, sans-serif; 
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
-li {
-    display: inline;
+.navbar li {
+    float: left; 
+    padding-right: 0.5em;
 }
 
 .sample {
     width: 100%; 
-    padding-left: 0em;
-    padding-right: 0em;
+    padding-bottom: 1.5em;
 }
 
 .info {
-    width: auto; 
+    width: 100%; 
 }
 
-p {
-    padding-top: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
+.wrapper p {
+    padding-bottom: 1em;
     color: black; 
     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 1em; 
+    font-size: 1.25em; 
     line-height: 1.333em; 
 }
 
@@ -62,46 +74,33 @@ h1 {
     line-height: 1.333em; 
 }
 
-@media only screen and (min-width: 768px) {
-    
-    .wrapper {
-        width: 568px; 
-        margin: 0 auto; 
-    }
-
-    .home {
-        width: 50%; 
-        padding-top: 2em; 
-        padding-left: 0em;
-        padding-right: 0em;
-    }
-
-    nav {
-        padding-bottom: 1.5em;
-        padding-left: 0em;
-        padding-right: 0em;
-        font-size: 1.25em;
-    }
-
-    .sample {
-        padding-bottom: 1.5em;
-    }
-
-    .info {
-        width: 100%; 
-    }
-
-    p {
-        padding-top: 0em; 
-        padding-bottom: 1em;
-        padding-left: 0em;
-        padding-right: 0em;
-        font-size: 1.25em; 
-        line-height: 1.333em; 
-    }
+.contact {
+    width: 100%; 
 }
 
-@media only screen and (min-width: 1024px) {
+.contact ul{
+    list-style-type: none; 
+    overflow: hidden; 
+    text-align: center;
+    color: black; 
+    font-family: Arial, sans-serif; 
+    font-size: 1em;
+}
+
+.contact li { 
+    padding-bottom: 1em;
+}
+
+.contact p {
+    padding-top: 1em;
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.25em; 
+    line-height: 1.333em; 
+}
+
+
+@media only screen and (min-width: 1000px) {
     
     .wrapper {
         width: 768px; 
@@ -110,14 +109,10 @@ h1 {
     .home {
         width: 50%; 
         padding-top: 3em; 
-        padding-left: 0em;
-        padding-right: 0em;
     }
     
     nav {
         padding-bottom: 2em;
-        padding-left: 0em;
-        padding-right: 0em;
         font-size: 1.5em;
     }
     
@@ -131,13 +126,9 @@ h1 {
         float: right; 
     }
     
-    p {
-        padding-top: 0em;
+    .wrapper p {
         padding-bottom: 1em;
         padding-left: 1em;
-        padding-right: 0em;
-        font-size: 1.25em; 
-        line-height: 1.333em; 
     }
 
     .footer {
@@ -161,9 +152,12 @@ h1 {
         font-size: 2em;
     }
 
-    p {
+    .wrapper p {
         padding-left: 2em;
         font-size: 2em; 
-        line-height: 1.333em; 
+    }
+
+    .contact p {
+        font-size: 2em; 
     }
 }
