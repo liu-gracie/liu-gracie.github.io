@@ -18,6 +18,10 @@ a:hover {
     text-decoration: none;
 } 
 
+a:active {
+    color: lightslategray; 
+}
+
 .wrapper {
     background-color: white;
     width: 320px; 
@@ -43,7 +47,7 @@ a:hover {
     padding-right: 0.5em;
 }
 
-.sample {
+.image {
     width: 100%; 
     padding-bottom: 1.5em;
 }
@@ -52,10 +56,11 @@ a:hover {
     width: 100%; 
 }
 
-.wrapper p {
+p {
     padding-bottom: 1em;
     color: black; 
     font-family: Arial, Helvetica, sans-serif; 
+    font-weight: normal; 
     font-size: 1.25em; 
     line-height: 1.333em; 
 }
@@ -74,28 +79,40 @@ h1 {
     line-height: 1.333em; 
 }
 
+h4 {
+    padding-bottom: 1.5em;
+    color: black; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: normal; 
+    font-size: 1.25em; 
+    line-height: 1.333em; 
+}
+
 .contact {
     width: 100%; 
 }
 
-.contact ul{
-    list-style-type: none; 
-    overflow: hidden; 
-    text-align: center;
-    color: black; 
-    font-family: Arial, sans-serif; 
-    font-size: 1em;
-}
-
-.contact li { 
-    padding-bottom: 1em;
-}
-
-.contact p {
+h3 {
     padding-top: 1em;
     color: black; 
     font-family: Arial, Helvetica, sans-serif; 
+    font-weight: normal;
     font-size: 1.25em; 
+    line-height: 1.333em; 
+}
+
+.list li{
+    padding-top: 1em; 
+    text-align: center;
+}
+
+.list ul{
+    list-style-type: none; 
+    overflow: hidden; 
+    color: black; 
+    font-family: Arial, sans-serif; 
+    font-size: 1.25em;
     line-height: 1.333em; 
 }
 
@@ -116,7 +133,7 @@ h1 {
         font-size: 1.5em;
     }
     
-    .sample {
+    .image {
         width: 70%; 
         float: left; 
     }
@@ -126,7 +143,7 @@ h1 {
         float: right; 
     }
     
-    .wrapper p {
+    p {
         padding-bottom: 1em;
         padding-left: 1em;
     }
@@ -139,7 +156,17 @@ h1 {
         padding-top: 2em; 
         padding-bottom: 2em;
         font-size: 1.5em; 
+    } 
+
+    h4 {
+        display: none; 
     }
+
+    h3 {
+        text-align: center;
+    }
+
+
 }
 
 @media only screen and (min-width: 1920px) {
@@ -152,12 +179,18 @@ h1 {
         font-size: 2em;
     }
 
-    .wrapper p {
+    p {
         padding-left: 2em;
         font-size: 2em; 
     }
 
-    .contact p {
+    h3 {
         font-size: 2em; 
+    } 
+
+    .list ul{
+        font-size: 2em;
     }
+
+
 }
