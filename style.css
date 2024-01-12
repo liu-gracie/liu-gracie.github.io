@@ -68,6 +68,8 @@ p {
 
 .footer {
     width: 100%; 
+    padding-top: 1em; 
+    padding-bottom: 1em;
 }
 
 h1 {
