@@ -81,6 +81,17 @@
         </div>
       </image>
 
+      <script type="text/javascript">
+        var counter = 1; 
+        setInterval(function(){
+          document.getElementById("radio" + counter).checked = true; 
+          counter++; 
+          if(counter > 6) {
+            counter = 1
+          }
+        }, 2000); 
+      </script>
+
       <article class="info">
         <p>
           Grace Liu is a designer and student, 
