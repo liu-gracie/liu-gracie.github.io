@@ -1,0 +1,306 @@
+/* FONTS */
+
+/* Set up installed fonts */ 
+@font-face {
+    font-family: 'Gotham Book'; 
+    src: url(fonts/gotham/Gotham-Book.otf) format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Gotham Bold'; 
+    src: url(fonts/gotham/Gotham-Bold.otf) format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Gotham Medium'; 
+    src: url(fonts/gotham/Gotham-Medium.otf) format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
+
+/* Basic reset to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font and background color */
+body {
+    font-family: 'Gotham Book', Arial, sans-serif;
+    color: #cacaca; 
+    background-color: #000000;
+    text-align: center;
+}
+
+
+/* Container to center content and add padding */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Normal link state */
+a {
+    color: #cacaca;
+    text-decoration: none; 
+}
+
+/* Hover state */
+a:hover {
+    color: #ffffff;
+}
+
+/* Visited state */
+a:visited {
+    color: #cacaca;
+}
+
+/* Active state */
+a:active {
+    color: #ffffff;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+/* HEADER STYLING */ 
+/* HEADER STYLING */
+/* HEADER STYLING */
+
+header {
+    color: #cacaca;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gotham Bold', Arial, sans-serif;
+    letter-spacing: 15px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    /* color: #CFE4D6; */ 
+    font-family: 'Gotham Medium', Arial, sans-serif;
+    font-size: large;
+}
+
+
+/* SLIDESHOW STYLING */
+/* SLIDESHOW STYLING */
+/* SLIDESHOW STYLING */
+
+.slideshow-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slideshow-item img {
+    width: 100%;
+    max-height: auto; 
+    margin-bottom: 20px;
+}
+
+.slideshow-item h3 {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+} 
+
+.border {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+/* ABOUT STYLING */ 
+/* ABOUT STYLING */
+/* ABOUT STYLING */
+
+.about {
+    position: relative;
+    height: 100vh;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+.about-background {
+    background-image: url("videos/about_small.mp4");
+    
+}
+
+.flexbox {
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    padding: 50px; 
+    margin-bottom: 50px;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: flex-end; 
+}
+
+.about-item {
+    width: 30%; 
+    padding: 20px; 
+}
+
+.about-item p {
+    font-family: 'Gotham Medium', Arial, sans-serif;
+    hyphens: auto;        
+    text-align: justify;
+    margin-bottom: 10px; 
+    text-indent: 50px;
+} 
+
+.social-icons {
+    display: flex;
+    gap: 50px; /* Space between icons */
+    margin-top: 20px; /* Space above the icons */
+    justify-content: center;
+}
+
+.social-icons img, .social-icons i {
+    color: #cacaca;
+    font-size: 30px; 
+    align-items: center;
+}
+
+
+/* PORTFOLIO STYLING */
+/* PORTFOLIO STYLING */
+/* PORTFOLIO STYLING */
+
+.grid {
+    /* From container*/
+    width: 50%;
+    margin: 0 auto;
+    display: grid; /* Defines the container as a grid */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    font-family: 'Gotham Book', Arial, sans-serif;
+    font-size: x-small;
+    margin-bottom: 5px;
+}
+
+.portfolio-item p {
+    font-size: x-small;
+}
+
+
+
+/* OTHER STYLING */
+/* OTHER STYLING */
+/* OTHER STYLING */
+
+.grid {
+    /* From container*/
+    width: 50%;
+    margin: 0 auto;
+    display: grid; /* Defines the container as a grid */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    
+}
+
+.other-item {
+    text-align: center;
+}
+
+.other-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.other-item h3 {
+    font-family: 'Gotham Medium', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+
+/* FOOTER STYLING */
+/* FOOTER STYLING */
+/* FOOTER STYLING */
+
+footer {
+    position: absolute; 
+    bottom: 0;
+
+    color: #cacaca; 
+    text-align: center;
+    width: 100%; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .container {
+    display: flex; 
+    flex-direction: column; 
+}
+
+footer .content {
+    clear: both; 
+}
+
+.footy .container {
+    position: relative; 
+    width: 100%; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+/* MEDIA QUERY FOR MOBILE DEVICES */
+/* MEDIA QUERY FOR MOBILE DEVICES */
+/* MEDIA QUERY FOR MOBILE DEVICES */
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS */
+/* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS */
+/* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS */
