@@ -487,6 +487,15 @@ footer .content {
 
     .flexbox {
         position: relative; 
+        bottom: 0; 
+        right: 0; 
+        padding: 50px; 
+        margin-bottom: 50px;
+        display:block;  
+    }
+
+    .flexbox {
+        clear: auto;
     }
 
     /* Portfolio grid adjustments */
