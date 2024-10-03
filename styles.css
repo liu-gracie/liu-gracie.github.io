@@ -63,10 +63,11 @@ a:visited {
     color: #cacaca;
 }
 
-/* Active state */
+/* Active state 
 a:active {
     color: #ffffff;
 }
+    */ 
 
 
 
@@ -212,8 +213,8 @@ header nav ul li a {
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
 }
 
 .portfolio-item h3 {
@@ -239,7 +240,6 @@ header nav ul li a {
     display: grid; /* Defines the container as a grid */
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
-    
 }
 
 .other-item {
@@ -249,8 +249,8 @@ header nav ul li a {
 .other-item img {
     max-width: 100%;
     height: auto;
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
 }
 
 .other-item h3 {
@@ -300,7 +300,107 @@ footer .content {
 /* MEDIA QUERY FOR MOBILE DEVICES */
 /* MEDIA QUERY FOR MOBILE DEVICES */
 
+@media (max-width: 768px) {
+    /* Adjust body font size and line height */
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Container width */
+    .container {
+        width: 90%;
+    }
+
+    /* Header styling */
+    header h1 {
+        font-size: 24px;
+        letter-spacing: 5px;
+    }
+
+    /* Navigation links */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Slideshow item adjustments */
+    .slideshow-item img {
+        width: 100%;
+    }
+
+    /* About section adjustments */
+    .about-item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Social icons adjustments */
+    .social-icons {
+        flex-direction: column;
+        gap: 20px; /* Space between icons */
+    }
+
+    /* Portfolio grid adjustments */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Other item grid adjustments */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 12px;
+    }
+}
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS */
 /* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS */
 /* MEDIA QUERY FOR TABLETS AND SMALLER SCREENS */
+
+@media (max-width: 1415px) {
+    /* Adjust body font size for tablets */
+    body {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* Container width */
+    .container {
+        width: 80%;
+    }
+
+    /* Header styling adjustments */
+    header h1 {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+
+    /* Portfolio grid adjustments */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Other item grid adjustments */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Slideshow item adjustments */
+    .slideshow-item img {
+        width: 90%;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 14px;
+    }
+}
