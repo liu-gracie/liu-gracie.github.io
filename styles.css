@@ -456,7 +456,7 @@ footer .content {
 
     /* Container width */
     .container {
-        width: 90%;
+        width: 80%;
     }
 
     /* Header styling */
@@ -483,6 +483,10 @@ footer .content {
     .about-item {
         width: 100%;
         padding: 10px;
+    }
+
+    .flexbox {
+        position: relative; 
     }
 
     /* Portfolio grid adjustments */
