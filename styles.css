@@ -22,6 +22,13 @@
     font-style: normal; 
 }
 
+@font-face {
+    font-family: 'Gotham Light'; 
+    src: url(fonts/gotham/Gotham-Light.otf) format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
 
 
 /* Basic reset to ensure consistency across browsers */
@@ -36,15 +43,15 @@ body {
     font-family: 'Gotham Book', Arial, sans-serif;
     color: #cacaca; 
     background-color: #000000;
-    text-align: center;
 }
 
 
 /* Container to center content and add padding */
 .container {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: yellowgreen;
 }
 
 /* Normal link state */
@@ -55,7 +62,8 @@ a {
 
 /* Hover state */
 a:hover {
-    color: #ffffff;
+    color: #ffffff; 
+    transition: color 0.5s ease-in-out;
 }
 
 /* Visited state */
@@ -80,34 +88,21 @@ a:active {
 /* HEADER STYLING */
 
 header {
-    color: #cacaca;
+    text-align: center;
     padding-top: 20px; 
     padding-bottom: 20px;
 }
 
 header h1 {
-    text-align: center;
     text-transform: uppercase;
-    font-family: 'Gotham Bold', Arial, sans-serif;
-    letter-spacing: 15px;
-    margin-bottom: 10px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    /* color: #CFE4D6; */ 
     font-family: 'Gotham Medium', Arial, sans-serif;
-    font-size: large;
+    letter-spacing: 100%; 
+    margin-bottom: 10px; 
+    font-size: 2vw; /* NOTE: Add media query so font size never goes below XXX */ 
+} 
+
+header h3 {
+    font-family: 'Gotham Light', Arial, sans-serif;
 }
 
 
@@ -127,6 +122,7 @@ header nav ul li a {
 }
 
 .slideshow-item h3 {
+    font-family: 'Gotham Light', Arial, sans-serif;
     margin-top: 10px; 
     margin-bottom: 10px;
 } 
@@ -296,220 +292,3 @@ footer .content {
 
 
 /* ------------------------------------------------------------------- */
-
-
-@media (max-width: 1415px) {
-    /* Adjust body font size for tablets */
-    body {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    /* Container width */
-    .container {
-        width: 80%;
-    }
-
-    .border {
-        width: 100%;
-    }
-
-    /* Header styling adjustments */
-    header h1 {
-        font-size: 30px;
-        letter-spacing: 10px;
-    }
-
-    /* About section adjustments */
-    .about-item {
-        width: 40%;
-        padding: 10px;
-    }    
-
-    /* Portfolio grid adjustments */
-    .portfolio-grid {
-        width: 60%; 
-    }
-
-    /* Other item grid adjustments */
-    .other-grid {
-        width: 30%; 
-    }
-
-    /* Slideshow item adjustments */
-    .slideshow-item img {
-        width: 90%;
-    }
-
-    /* Footer adjustments */
-    footer {
-        font-size: 14px;
-    }
-}
-
-
-
-
-@media (max-width: 1285px) {
-
-    /* Container width */
-    .container {
-        width: 80%;
-    }
-
-
-    /* Header styling adjustments */
-    header h1 {
-        font-size: 30px;
-        letter-spacing: 10px;
-    }
-
-    /* About section adjustments */
-    .about-item {
-        width: 50%;
-    }    
-
-    /* Portfolio grid adjustments */
-    .portfolio-grid {
-        width: 40%; 
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Other item grid adjustments */
-    .other-grid {
-        width: 40%; 
-    }
-
-    /* Slideshow item adjustments */
-    .slideshow-item img {
-        width: 100%;
-    }
-
-    /* Footer adjustments */
-    footer {
-        font-size: 14px;
-    }
-}
-
-
-
-@media (max-width: 1100px) {
-    /* Adjust body font size and line height */
-    body {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    /* Container width */
-    .container {
-        width: 90%;
-    }
-
-    /* Header styling */
-    header h1 {
-        font-size: 24px;
-        letter-spacing: 5px;
-    }
-
-    header nav ul li {
-        margin-left: 20px; 
-        margin-right: 20px;
-    }
-
-    /* Slideshow item adjustments */
-    .slideshow-item img {
-        width: 100%;
-    }
-
-    .about-background {
-        background-image: url(others/00/black.png);
-    }
-
-    /* About section adjustments */
-    .about-item {
-        width: 50%;
-        padding: 10px;
-    }
-
-    /* Social icons adjustments */
-    .social-icons {
-        gap: 20px; /* Space between icons */
-    }
-
-    /* Footer adjustments */
-    footer {
-        font-size: 12px;
-    }
-}
-
-
-/* MEDIA QUERY FOR MOBILE DEVICES */
-/* MEDIA QUERY FOR MOBILE DEVICES */
-/* MEDIA QUERY FOR MOBILE DEVICES */
-
-@media (max-width: 768px) {
-    /* Adjust body font size and line height */
-    body {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    /* Container width */
-    .container {
-        width: 80%;
-    }
-
-    /* Header styling */
-    header h1 {
-        font-size: 24px;
-        letter-spacing: 5px;
-    }
-
-    header nav ul li {
-        margin-left: 20px;
-        margin-right: 20px; 
-    }
-
-    /* Slideshow item adjustments */
-    .slideshow-item img {
-        width: 100%;
-    }
-
-    .about-background {
-        background-image: url(others/00/black.png);
-    }
-
-    /* About section adjustments */
-    .about-item {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .flexbox {
-        position: relative; 
-        bottom: 0; 
-        right: 0; 
-        padding: 50px; 
-        margin-bottom: 50px;
-        display:block;  
-    }
-
-    .flexbox {
-        clear: auto;
-    }
-
-    /* Portfolio grid adjustments */
-    .portfolio-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    /* Other item grid adjustments */
-    .other-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    /* Footer adjustments */
-    footer {
-        font-size: 12px;
-    }
-}
