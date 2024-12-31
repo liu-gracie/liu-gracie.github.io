@@ -1,6 +1,5 @@
-/* FONTS */
+/* -------------------- FONTS -------------------- */
 
-/* Set up installed fonts */ 
 @font-face {
     font-family: 'Gotham Book'; 
     src: url(fonts/gotham/Gotham-Book.otf) format('opentype'); 
@@ -31,9 +30,7 @@
 
 
 
-/* BASIC SETUP */
-/* BASIC SETUP */
-/* BASIC SETUP */
+/* -------------------- BASIC SETUP -------------------- */
 
 /* Basic reset to ensure consistency across browsers */
 * {
@@ -51,9 +48,8 @@ body {
 
 /* Container to center content and add padding */
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Normal link state */
@@ -65,198 +61,244 @@ a {
 
 /* Hover state */
 a:hover {
-    color: #ffffff; 
-    font-size: 102%;
-}
-
-/* Visited state */
-a:visited {
-    color: inherit; 
+    color: #eeeeee; 
+    font-size: 101%;
 }
 
 
 
-/* ------------------------------------------------------------------- */
-
-
-
-/* HEADER STYLING */ 
-/* HEADER STYLING */
-/* HEADER STYLING */
+/* -------------------- HEADER STYLING -------------------- */
 
 header {
-    text-align: center;
-    padding-top: 40px; 
-    padding-bottom: 40px;
-}
+    background-color: #000000;
 
-header h1 {
-    text-transform: uppercase;
-    font-family: 'Gotham Medium', Arial, sans-serif;
-    letter-spacing: 100%; 
-    font-size: 2em; 
-} 
-
-
-
-/* SLIDESHOW STYLING */
-/* SLIDESHOW STYLING */
-/* SLIDESHOW STYLING */
-
-.slideshow-item {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.slideshow-item img {
-    width: 100%;
-    max-height: auto; 
-    margin-bottom: 20px;
-}
-
-.border {
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-
-
-/* ABOUT STYLING */ 
-/* ABOUT STYLING */ 
-/* ABOUT STYLING */ 
-
-.footer-content {
-    float: right; 
-    width: 40%;
-}
-
-.about-content {
-    float:left;
-    width: 40%;
-}
-
-.photo img, .photo i {
+    position: sticky;
+    top: 0; 
+    left: 0; 
     width: 100%; 
-    justify-content: center;
+    z-index: 10; /* Keeps header above other content */ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 25px; 
+    padding-bottom: 25px;
+
+
+    font-family: 'Gotham Medium', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 50%; 
+}
+
+h1 {
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+
+/* -------------------- WORKS STYLING -------------------- */
+
+.works {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+
+    font-family: 'Gotham Medium', Arial, sans-serif;
+}
+
+.works img, .works i {
+    width: 100%;
+    height: auto; 
+
+    padding-top: 0px; 
+    padding-bottom: 5px; 
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+.kairos {
+    color: gainsboro; 
+    background-color: #3c3c42;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.shrimp {
+    color: salmon; 
+    background-color: #3b4c71;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.bpr {
+    color: whitesmoke; 
+    background-color: #7988bd;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* -------------------- MORE WORKS STYLING -------------------- */
+
+.more {
+    background-color: #000000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: top;
+    gap: 25px; 
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.more p {
+    padding-top: 0px; 
+    padding-bottom: 5px; 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul.links {
+    list-style-type: square;   
+}
+
+ul.links li {
+    padding-top: 0px; 
+    padding-bottom: 5px; 
+    margin-left: 25px;
+    padding-right: 0px;
+}
+
+
+
+/* -------------------- ABOUT STYLING -------------------- */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+
+    font-family: 'Gotham Book', Arial, sans-serif;
+
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.about img, .about i {
+    width: 100%;
+    height: auto; 
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.text {
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .text p {
-    padding-bottom: 20px;
-    text-align: left;
+    padding-top: 0px; 
+    padding-bottom: 10px; 
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-h3 {
-    text-align: center;
-}
 
 
-
-/* FOOTER STYLING */
-/* FOOTER STYLING */
-/* FOOTER STYLING */
+/* -------------------- FOOTER STYLING -------------------- */
 
 footer {
-    text-align: center;
-    padding-top: 40px; 
-    padding-bottom: 40px;
-}
+    background-color: #000000;
 
-footer p {
-    font-family: 'Gotham Book', Arial, sans-serif;
+    position: sticky;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 10; /* Keeps footer above other content */ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 25px; 
+    padding-bottom: 25px;
+
+
+    font-family: 'Gotham Medium', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 50%; 
 }
 
 .social-icons {
-    display: flex;
-    gap: 80px; /* Space between icons */
-    margin-top: 40px; 
-    margin-bottom: 40px;
-    justify-content: center;
-}
-
-.social-icons img, .social-icons i {
-    color: #cacaca;
-    font-size: 2em; 
-    align-items: center;
-}
-
-.social-icons img, .social-icons i:hover{
-    color: #ffffff;
-    transition: color 0.5s ease-in-out;
+    font-size: 25px;
+    gap: 25px; 
+    margin: 5px;
 }
 
 
+/* Media Query for Tablets (e.g., 600px and up) */
+@media (min-width: 600px) {
+    .about {
+        width: 90vw; 
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
 
-/* ------------------------------------------------------------------- */ 
-
-
-
-@media (max-width: 768px) {
-
-    header {
-        text-align: center;
-        padding-top: 40px; 
-        padding-bottom: 0px;
+/* Media Query for Tablets (e.g., 900px and up) */
+@media (min-width: 900px) {
+    .works {
+        display: grid; /* From flex */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
     }
 
-    header h1 {
-        font-size: 1.5em; 
-    } 
+    .about {
+        width: 100vw; 
+        margin-left: 0vw;
+        margin-right: 0vw;
 
-    .slideshow-item {
-        margin-top: 20px;
-        margin-bottom: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 0px; 
+    }
+}
+
+/* Media Query for Desktops (e.g., 1600px and up) */
+@media (min-width: 1600px) {
+    .works {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .slideshow-item img {
-        margin-bottom: 0px;
-    }
-
-    .border {
-        width: 100%;
-        padding-bottom: 0px;
-    }
-
-    .footer-content {
-        float: none; 
-        width: 100%;
-    }
-
-    .about-content {
-        float: none;
-        width: 100%;
-        padding-bottom: 40px;
-    }
-
-    .photo img, .photo i {
-        width: 100%; 
-        padding: 20px;
-    }
-
-    .text p {
-        font-size: small;
-        padding-bottom: 10px;
-    }
-
-    h3 {
-        font-size: medium;
-    }
-
-    footer {
-        text-align: center;
-        padding-top: 20px; 
-        padding-bottom: 20px;
-    }
-
-    footer p {
-        font-size: small;
-    }
-
-    .social-icons {
-        gap: 40px; /* Space between icons */
-    }
-
-    .social-icons img, .social-icons i {
-        font-size: 2em; 
+    .about {
+        width: 90vw; 
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 }
