@@ -150,6 +150,34 @@ h1 {
     padding-right: 25px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+
+    font-family: 'Gotham Book', Arial, sans-serif;
+}
+
+.row img, .row i {
+    width: 50%;
+    height: auto; 
+
+    padding-top: 0px; 
+    padding-bottom: 10px; 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row p {
+    font-size: smaller;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 /* -------------------- MORE WORKS STYLING -------------------- */
 
 .more {
@@ -268,13 +296,22 @@ footer {
         margin-left: 5vw;
         margin-right: 5vw;
     }
+
+    .row p {
+        font-size: medium;
+        
+        padding-top: 25px; 
+        padding-bottom: 25px; 
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 /* Media Query for Tablets (e.g., 900px and up) */
 @media (min-width: 900px) {
     .works {
         display: grid; /* From flex */
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 0px;
     }
 
@@ -287,12 +324,22 @@ footer {
         grid-template-columns: 1fr 1fr; 
         gap: 0px; 
     }
+
+    .row p {
+        column-count: 2; 
+        column-gap: 25px; 
+    }
 }
 
 /* Media Query for Desktops (e.g., 1600px and up) */
 @media (min-width: 1600px) {
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
     .works {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .about {
