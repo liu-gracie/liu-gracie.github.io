@@ -130,6 +130,16 @@ h1 {
     padding-right: 25px;
 }
 
+.turn {
+    color: #000000; 
+    background-color: lightblue;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .shrimp {
     color: salmon; 
     background-color: #3b4c71;
@@ -150,9 +160,50 @@ h1 {
     padding-right: 25px;
 }
 
+.turtle {
+    color: green; 
+    background-color: lightgreen;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.hope {
+    color: #d0e0de; 
+    background-color: #014240;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.designers {
+    color: gainsboro; 
+    background-color: navy;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
 .city {
     color: gainsboro; 
     background-color: #7b818c;
+
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.votes {
+    color: gainsboro; 
+    background-color: #2454FF;
 
     padding-top: 25px; 
     padding-bottom: 25px; 
