@@ -107,7 +107,8 @@ h1 {
     justify-content: flex-start;
     align-items: left;
 
-    font-family: 'Gotham Medium', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: normal;
 }
 
 .works img, .works i {
@@ -115,14 +116,16 @@ h1 {
     height: auto; 
 
     padding-top: 0px; 
-    padding-bottom: 5px; 
+    padding-bottom: 0px; 
     padding-left: 0px;
     padding-right: 0px;
+
+    margin: 0px; 
 }
 
 .kairos {
     color: gainsboro; 
-    background-color: #3c3c42;
+    background-color: #21252c;
 
     padding-top: 25px; 
     padding-bottom: 25px; 
@@ -141,7 +144,7 @@ h1 {
 }
 
 .shrimp {
-    color: salmon; 
+    color: cornsilk; 
     background-color: #3b4c71;
 
     padding-top: 25px; 
@@ -190,7 +193,6 @@ h1 {
     padding-right: 25px;
 }
 
-
 .city {
     color: gainsboro; 
     background-color: #7b818c;
@@ -216,8 +218,6 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
-
-    font-family: 'Gotham Book', Arial, sans-serif;
 }
 
 .row img, .row i {
@@ -225,7 +225,7 @@ h1 {
     height: auto; 
 
     padding-top: 0px; 
-    padding-bottom: 10px; 
+    padding-bottom: 0px; 
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -240,7 +240,8 @@ h1 {
 }
 
 .info p {
-    font-family: 'Gotham Book', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: normal;
     font-size: smaller;
 
     padding-top: 25px; 
@@ -275,6 +276,9 @@ h1 {
 
 ul.links {
     list-style-type: square;   
+
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: normal;
 }
 
 ul.links li {
